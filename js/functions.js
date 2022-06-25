@@ -109,9 +109,9 @@ function changeToStickerCourse() {
       }
 
     
+    
+    function changeDarkMode() { 
 
-    function changeColor() { 
-        
         let bodyColor = document.body.style.background= "black";
         localStorage.setItem('bgStoredValue', document.body.style.backgroundColor = bodyColor);
 
@@ -126,6 +126,22 @@ function changeToStickerCourse() {
 
       }
     
+
+      function changeLightMode() { 
+
+        let bodyColor = document.body.style.background= "white";
+        localStorage.setItem('bgStoredValue', document.body.style.backgroundColor = bodyColor);
+
+        let textColor = document.body.style.color= "black";
+        localStorage.setItem('textColorStoredValue', document.body.style.color = textColor);
+      }
+      
+      if(localStorage.bgStoredValue) {
+        document.body.style.backgroundColor = localStorage.bgStoredValue;
+        document.body.style.color   = localStorage.textColorStoredValue;
+
+
+      }
         
    
  
