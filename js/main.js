@@ -187,16 +187,9 @@ function registerUser() {
 		username: registerUsername,
 		password: registerPassword
 	}
-
-  objPeople.forEach(function(item){
-    if(registerUser == item.username) {
-			// alert user that the username is take
-			alert('That username is alreat in user, please choose another')
-			// stop the statement if result is found true
-			return
-    
-  }});
 	
+
+  
 	objPeople.push(newUser)
   console.log(objPeople)
 }
