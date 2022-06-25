@@ -100,13 +100,37 @@ function changeToStickerCourse() {
 
 
 
-    function changeBgColor() {
+
+
+      function changeBgColor() {
         let bodyColor = document.body;
         bodyColor.classList.toggle("dark-mode");
-        
+
       }
+
+
+
+      function updateColor() {
+
+     let bodyColor = document.body.style.background= "black";
+
+    localStorage.setItem("bodyColor", bodyColor);
+    };
     
 
+    function changeColor() { 
+        let bodyColor = document.body.style.background= "black";
+        localStorage.setItem('storedValue', document.body.style.backgroundColor = bodyColor);
+      }
+      
+      if(localStorage.storedValue) {
+        document.document.body.style.backgroundColor.value = localStorage.storedValue;
+        document.body.style.backgroundColor   = localStorage.storedValue;
+      }
+    
+        
+   
+ 
 
 
 
