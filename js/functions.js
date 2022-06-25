@@ -1,42 +1,4 @@
 
-
-
-
-
-// document.querySelector('course-vid').addEventListener('click', (evt) => {
-//   const currentVideo = evt.target.getAttribute('src')
-
-//   if (currentVideo === gouacheCourse) {
-//     evt.target.setAttribute('src', stickerCourse)
-//   } else {
-//     evt.target.setAttribute('src', gouacheCourse)
-//   }
-// })
-
-
-// function changeVideo(){
-    
-
-//     const gouacheCourse = "videos/Gouache_course.mp4"
-//     const stickerCourse = "videos/sticker_course.mp4"
-    
-//      vid = document.querySelector('course-vid')
-
-//         const currentVideo = vid.getAttribute('src')
-      
-//         if (currentVideo === gouacheCourse) {
-//             vid.setAttribute('src', stickerCourse)
-//         } else {
-//             vid.setAttribute('src', gouacheCourse)
-//         }
-
-
-// }
-
-
-
-
-
 function changeToStickerCourse() { 
 
     let vid = document.getElementById("course-vid");
@@ -45,7 +7,7 @@ function changeToStickerCourse() {
         if (isSupp == "") {
             vid.src = "Gouache_course.mp4";
         } else {
-            vid.src = "videos/sticker_course.mp4";
+            vid.src = "media/videos/sticker_course.mp4";
         }
         vid.load();
 
@@ -58,10 +20,18 @@ function changeToStickerCourse() {
 
     desc.innerText = "I hope you enjoyed seeing all the ways I have made stickers at home for my small business! I hope one of these methods will help you begin your sticker-making journey :)";
 
-    
-    
-    
-    
+    img1 = document.getElementById("course-img1")
+    img1.src= "https://cdn.shopify.com/s/files/1/2652/5526/products/1_1d94f88f-90c5-4c0a-b630-2349cc9d324f_800x800.jpg?v=1652684062"
+
+
+    img1 = document.getElementById("course-img2")
+    img1.src= "https://m.media-amazon.com/images/I/41K7CJa3kqL._AC_SX679_.jpg"
+
+    img1 = document.getElementById("course-img3")
+    img1.src= "https://cdn.shopify.com/s/files/1/2652/5526/products/1_355f35ac-79ab-4a24-8f9a-2a3306d42359_800x800.jpg?v=1612431546"
+
+
+
     }
 
 
