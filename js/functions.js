@@ -108,24 +108,22 @@ function changeToStickerCourse() {
 
       }
 
-
-
-      function updateColor() {
-
-     let bodyColor = document.body.style.background= "black";
-
-    localStorage.setItem("bodyColor", bodyColor);
-    };
     
 
     function changeColor() { 
+        
         let bodyColor = document.body.style.background= "black";
-        localStorage.setItem('storedValue', document.body.style.backgroundColor = bodyColor);
+        localStorage.setItem('bgStoredValue', document.body.style.backgroundColor = bodyColor);
+
+        let textColor = document.body.style.color= "white";
+        localStorage.setItem('textColorStoredValue', document.body.style.color = textColor);
       }
       
-      if(localStorage.storedValue) {
-        document.document.body.style.backgroundColor.value = localStorage.storedValue;
-        document.body.style.backgroundColor   = localStorage.storedValue;
+      if(localStorage.bgStoredValue) {
+        document.body.style.backgroundColor = localStorage.bgStoredValue;
+        document.body.style.color   = localStorage.textColorStoredValue;
+
+
       }
     
         
