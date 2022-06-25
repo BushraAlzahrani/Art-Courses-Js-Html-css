@@ -142,9 +142,64 @@ function changeToStickerCourse() {
 
 
       }
+
+
+
+
+      
         
    
  
+var objPeople = [
+	{
+		username: 'bushra',
+		password: 'bushra22'
+	}
+]
+
+
+function login() {
+
+	var username = document.getElementById('Username').value
+	var password = document.getElementById('Password').value
+
+  objPeople.forEach(function(item){
+    if(username == item.username && password == item.password) {
+			console.log(username + ' is logged in!!!')
+			return
+
+		} else {
+			console.log('incorrect username or password')
+		}
+    
+  });
+
+	
+}
+
+
+function registerUser() {
+
+	var registerUsername = document.getElementById('newUsername').value
+	var registerPassword = document.getElementById('newPassword').value
+	
+	var newUser = {
+		username: registerUsername,
+		password: registerPassword
+	}
+
+  objPeople.forEach(function(item){
+    if(registerUser == item.username) {
+			// alert user that the username is take
+			alert('That username is alreat in user, please choose another')
+			// stop the statement if result is found true
+			return
+    
+  }});
+	
+	objPeople.push(newUser)
+  console.log(objPeople)
+}
 
 
 
