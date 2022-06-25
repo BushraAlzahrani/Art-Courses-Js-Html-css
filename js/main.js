@@ -145,10 +145,6 @@ function changeToStickerCourse() {
 
 
 
-
-      
-        
-   
  
 var objPeople = [
 	{
@@ -189,7 +185,7 @@ function registerUser() {
 	}
 	
 
-  
+
 	objPeople.push(newUser)
   console.log(objPeople)
 }
